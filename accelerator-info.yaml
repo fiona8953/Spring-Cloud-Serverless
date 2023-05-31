@@ -1,0 +1,22 @@
+id: 52fafc51-acae-498d-8300-efbb7580bb04
+timestamp: 2023-05-31T12:07:16Z
+username: fiona8953
+source: TAP-GUI
+accelerator:
+  name: spring-cloud-serverless
+  source:
+    image: tap15test.azurecr.io/tanzu-application-platform/tap-packages/tap-packages@sha256:6f49bb69638b65c3e39cade1d8c4d2e5bf0fd90fde422107789a2e3e86ca5a50
+fragments:
+  - name: build-wrapper-maven
+    source:
+      image: tap15test.azurecr.io/tanzu-application-platform/tap-packages/tap-packages@sha256:195a3ca6585fa91c41292584a19c2807c72ecdf986ce860a7147451e89d467d4
+  - name: tap-workload
+    source:
+      image: tap15test.azurecr.io/tanzu-application-platform/tap-packages/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=fiona8953&repo=https%3A%2F%2Fgithub.com%2Ffiona8953%2FSpring-Cloud-Serverless
+  deploymentType: workload
+  includeBuildToolWrapper: true
+  projectName: spring-cloud-serverless
+  sourceRepositoryPrefix: https://github.com/fiona8953/
