@@ -17,6 +17,6 @@ spec:
         value: "-Pnative -Dmaven.test.skip=true --no-transfer-progress package"
   source:
     git:
-      url: https://github.com/fiona8953/https%3A%2F%2Fgithub.com%2Ffiona8953%2FSpring-Cloud-Serverless
+      url: https://github.com/fiona8953/Spring-Cloud-Serverless
       ref:
         branch: main
